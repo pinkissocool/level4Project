@@ -22,6 +22,7 @@
             bug13 = document.getElementById("13");
             bug14 = document.getElementById("14");
             bug15 = document.getElementById("15");
+            message = document.getElementById('message');
             squashedImage = "<img src='images/squashedBug.jfif' alt='squashed bug!''>";
             meanRetorts = ["Bruh what a loser", "Beta move", "Keep going loser!", "LLLLLLLLLLL", "Bet you can't do that again", "BRRUUUUUUHHHHH loser", "Bet youre a loser"];
             sadRetorts = [":(", "plz no", "plzzzzzz noooooo", "Have mercy!", "please, youre destroying an entire civilization", ":((((((((((", "sed", ":( whyyyyyy"];
@@ -29,6 +30,16 @@
 
         function display(){
             bugChanged.innerHTML = squashedImage;
+            if (meanRetorts.length>0){
+                message.innerHTML = meanRetorts.splice(parseInt(Math.random() * meanRetorts.length), 1);
+                
+            }
+            else if (sadRetorts.length>0){
+                message.innerHTML = sadRetorts.splice(paraeInt(Math.random() * sadRetorts.length), 1);
+            }
+            else{
+                message.innerHTML = "you've killed them all";
+            }
         }
 
         function squash(bug){
