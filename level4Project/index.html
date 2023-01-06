@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function initialize(){
+            bug1 = document.getElementById("1");
+            bug2 = document.getElementById("2");
+            bug3 = document.getElementById("3");
+            bug4 = document.getElementById("4");
+            bug5 = document.getElementById("5");
+            bug6 = document.getElementById("6");
+            bug7 = document.getElementById("7");
+            bug8 = document.getElementById("8");
+            bug9 = document.getElementById("9");
+            bug10 = document.getElementById("10");
+            bug11 = document.getElementById("11");
+            bug12 = document.getElementById("12");
+            bug13 = document.getElementById("13");
+            bug14 = document.getElementById("14");
+            bug15 = document.getElementById("15");
+            squashedImage = "<img src='images/squashedBug.jfif' alt='squashed bug!''>";
+        }
+
+        function display(){
+            bugChanged.innerHTML = squashedImage;
+        }
+
+        function squash(bug){
+            bugChanged = bug;
+            display();
+        }
+    </script>
+</head>
+<body onload="initialize();">
+    <div></div>
+        <button id="1" onclick="squash(bug1);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+        <button id="2" onclick="squash(bug2);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+        <button id="3" onclick="squash(bug3);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+        <button id="4" onclick="squash(bug4);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+        <button id="5" onclick="squash(bug5);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+        <button id="6" onclick="squash(bug6);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+        <button id="7" onclick="squash(bug7);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+        <button id="8" onclick="squash(bug8);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+        <button id="9" onclick="squash(bug9);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+        <button id="10" onclick="squash(bug10);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+        <button id="11" onclick="squash(bug11);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+        <button id="12" onclick="squash(bug12);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+        <button id="13" onclick="squash(bug13);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+        <button id="14" onclick="squash(bug14);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+        <button id="15" onclick="squash(bug15);"><img src="images/cuteBug.jfif" alt="cute bug!"></button>
+    </div>
+</body>
+</html>
